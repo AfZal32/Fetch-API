@@ -1,0 +1,251 @@
+/* Forms */
+.input-section {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.input-section input {
+    border: 2px solid black;
+    width: 30%;
+    height: 36px;
+    margin-bottom: 5px;
+}
+
+#search-result-lists {
+    list-style: none;
+}
+
+#search-items {
+    display: inline;
+}
+
+#button-search:disabled {
+    cursor: not-allowed;
+}
+
+/* Button class */
+.button-success,
+.button-cancel {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-success {
+    background-color: #070707;
+    color: white;
+}
+
+.button-success:hover {
+    transform: scale(1.1);
+    background-color: #08800e;
+}
+
+#button-add-title,
+#button-search,
+.container-title ul li button {
+    margin-left: 5px;
+}
+
+.button-cancel {
+    background-color: #fd0303;
+    color: rgb(255, 253, 253);
+}
+
+.button-cancel:hover {
+    transform: scale(1.1);
+    background-color: #dd2424;
+}
+
+/* Pagination button */
+.pagination-controls button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.pagination-controls button.active {
+    background-color: #08800e;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Focus effect (optional for accessibility) */
+#button-add-title:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0f0f0f;
+}
+
+#button-add-title:disabled,
+#button-save:disabled {
+    cursor: not-allowed !important;
+}
+
+/* Required  */
+.required-line {
+    color: red;
+    font-family: sans-serif;
+    margin-top: 2px;
+    display: none;
+}
+
+/* container for show titles from posts */
+.container-title {
+    height: auto;
+}
+
+.container-title>ul li {
+    list-style: none;
+    margin-top: 0px;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+#titles {
+    display: block;
+}
+
+
+/* button style title */
+.button-title {
+    border: none;
+    background-color: white;
+}
+
+.button-title:hover {
+    transform: scale(1.3);
+    background-color: #f2f5f7;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* pagination  */
+.pagination-controls {
+    margin-left: 100px;
+}
+
+/* loading  logo */
+.spinner-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#spinner {
+    width: 48px;
+    height: 48px;
+}
+
+/* modal for update and delete */
+.modal-container {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(00, 00, 0, 0.5);
+}
+
+/* Modal update title */
+.modal-items-update {
+    height: 200px;
+    width: 70%;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.modal-items-update input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#button-save {
+    margin-left: 15px;
+}
+
+/* Modal delete title */
+#container-delete-modal {
+    display: none;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.title-delete {
+    height: 50px;
+    width: 100%;
+}
+
+.modal-elements-delete {
+    background: white;
+    width: 80%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.modal-elements-delete button {
+    margin: 10px 0px;
+
+}
+
+.modal-elements-delete h5 {
+    margin-top: 20px;
+}
+
+#btn-delete-yes :disabled {
+    cursor: not-allowed !important;
+}
+
+/* spinner at save button */
+.spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@media (min-width: 321px) and (max-width: 680px) {
+    .pagination-controls {
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-section input {
+        width: 70%;
+    }
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
